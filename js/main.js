@@ -11,7 +11,7 @@ const projects = [
         description: "Live Weather Dashboard is a web app that shows real-time weather updates using API integration. It allows users to search any city and view details like temperature, humidity, and wind speed instantly.",
         imageUrl: "./images/live-weather-dashboard-project-preview.jpg", // Make sure to add this image to your 'images' folder!
         liveUrl: "http://127.0.0.1:5500/Public/index.html",
-        codeUrl: "https://github.com/your-username/ecommerce-repo" // Replace with your repo link
+        codeUrl: "https://github.com/RaviO3/Weather-Dashboard" 
     }
 ];
 const themeToggle = document.querySelector('#theme-toggle');
