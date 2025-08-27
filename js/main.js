@@ -4,7 +4,7 @@ const projects = [
         description: "A responsive personal portfolio built from scratch using HTML, CSS, and vanilla JavaScript. Features a dynamic theme switcher and is populated by a JavaScript data structure.",
         imageUrl: "./images/portfolio-project-preview.jpg", // to be added
         liveUrl: "http://127.0.0.1:5500/index.html",
-        codeUrl: "https://github.com/your-username/your-repo-name" //repo link
+        codeUrl: "https://github.com/RaviO3/Portfolio-Project" 
     },
     {
         title: "Live Weather Dashboard",
