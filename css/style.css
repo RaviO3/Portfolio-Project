@@ -130,8 +130,10 @@ header nav ul li a:hover {
     text-align: center;
 }
 
-h1 {
-    font-size: 2rem;
+section h1,
+article h1,
+nav h1 {
+    font-size: 2.5rem;
     font-weight: var(--font-weight-bold);
     margin-bottom: var(--spacing-unit);
 }
