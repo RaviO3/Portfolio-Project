@@ -25,7 +25,7 @@ html[data-theme='dark'] {
     --surface-color: #1e1e1e;
     --text-color: #e0e0e0;
     --text-color-light: #ced4da;
-     --text-on-primary: #121212;
+    --text-on-primary: #121212;
     --border-color: #343a40;
     --shadow-color: rgba(255, 255, 255, 0.05);
 }
@@ -135,9 +135,11 @@ header nav ul li a:hover {
     font-weight: var(--font-weight-bold);
     margin-bottom: var(--spacing-unit);
 }
-/* h1{
+
+h1 {
     font-size: 2.5rem;
-} */
+}
+
 #hero .hero-subtitle {
     font-size: 1.5rem;
     margin-bottom: calc(var(--spacing-unit) * 2);
@@ -313,45 +315,45 @@ header nav ul li a:hover {
 }
 
 #form-status {
-  padding: 0.8rem 1rem;
-  margin-bottom: 1rem;
-  border-radius: var(--border-radius);
-  text-align: center;
-  font-weight: var(--font-weight-medium);
-  display: none;
-   opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-weight: var(--font-weight-medium);
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 #form-status.success {
-  display: block; 
-  opacity: 1; 
-  transform: translateY(0); 
-  background-color: #d1e7dd; 
-  color: #0f5132; 
-  border: 1px solid #badbcc;
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
 }
 
 #form-status.error {
-  display: block; 
-  opacity: 1; 
-  transform: translateY(0); 
-  background-color: #f8d7da; 
-  color: #842029; 
-  border: 1px solid #f5c2c7;
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
 }
 
 html[data-theme='dark'] #form-status.success {
-  background-color: #0f5132; 
-  color: #d1e7dd; 
-  border-color: #146c43;
+    background-color: #0f5132;
+    color: #d1e7dd;
+    border-color: #146c43;
 }
 
 html[data-theme='dark'] #form-status.error {
-  background-color: #842029; 
-  color: #f8d7da; 
-  border-color: #9b2a34;
+    background-color: #842029;
+    color: #f8d7da;
+    border-color: #9b2a34;
 }
 
 #contact button[type="submit"] {
