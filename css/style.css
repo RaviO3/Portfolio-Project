@@ -1,10 +1,11 @@
 :root {
-    --primary-color: #007bff;
+    --primary-color: #0056b3;
     --secondary-color: #6c757d;
-    --background-color: #f8f9fa;
+    --background-color: #ffffff;
     --surface-color: #ffffff;
-    --text-color: #212529;
+    --text-color: #333333;
     --text-color-light: #495057;
+    --text-on-primary: #ffffff;
     --border-color: #dee2e6;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -18,12 +19,13 @@
 }
 
 html[data-theme='dark'] {
-    --primary-color: #007bff;
+    --primary-color: #58a6ff;
     --secondary-color: #adb5bd;
     --background-color: #121212;
     --surface-color: #1e1e1e;
-    --text-color: #e9ecef;
+    --text-color: #e0e0e0;
     --text-color-light: #ced4da;
+     --text-on-primary: #121212;
     --border-color: #343a40;
     --shadow-color: rgba(255, 255, 255, 0.05);
 }
@@ -295,12 +297,9 @@ header nav ul li a:hover {
     font-family: inherit;
     font-size: inherit;
     color: var(--text-color);
-    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-#contact textarea {
     resize: vertical;
     min-height: 150px;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 #contact input[type="text"]:focus,
@@ -309,6 +308,48 @@ header nav ul li a:hover {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+#form-status {
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-weight: var(--font-weight-medium);
+  display: none;
+   opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#form-status.success {
+  display: block; 
+  opacity: 1; 
+  transform: translateY(0); 
+  background-color: #d1e7dd; 
+  color: #0f5132; 
+  border: 1px solid #badbcc;
+}
+
+#form-status.error {
+  display: block; 
+  opacity: 1; 
+  transform: translateY(0); 
+  background-color: #f8d7da; 
+  color: #842029; 
+  border: 1px solid #f5c2c7;
+}
+
+html[data-theme='dark'] #form-status.success {
+  background-color: #0f5132; 
+  color: #d1e7dd; 
+  border-color: #146c43;
+}
+
+html[data-theme='dark'] #form-status.error {
+  background-color: #842029; 
+  color: #f8d7da; 
+  border-color: #9b2a34;
 }
 
 #contact button[type="submit"] {

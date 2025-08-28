@@ -21,11 +21,8 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+            <button  class="theme-toggle" aria-label="Toggle theme between light and dark">
+                <i class="fas fa-sun"></i> </button>
             <div class="theme-switcher">
                 <label for="theme-toggle" class="switch-label">
                     <input type="checkbox" id="theme-toggle" class="switch-checkbox">
@@ -46,7 +43,8 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="images/profile-picture.jpg" alt="A professional headshot of [Your Name]">
+                    <img src="images/profile-picture.webp" class="about-me-image"
+                        alt="A professional headshot of Ravi Singh">
                 </div>
                 <div class="about-text">
                     <p>
@@ -73,7 +71,7 @@
             <h2>My Projects</h2>
             <div class="projects-container">
                 <div class="project-card">
-                    <img src="images/project-placeholder-1.jpg" alt="A screenshot or mockup of Project One"
+                    <img src="images/project-placeholder-1.webp" alt="A screenshot or mockup of Project One"
                         class="project-image">
                     <div class="project-info">
                         <h3>Project One Title</h3>
@@ -88,22 +86,10 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="images/project-placeholder-2.jpg" alt="A screenshot or mockup of Project Two"
+                    <img src="images/project-placeholder-2.webp" alt="A screenshot or mockup of Project Two"
                         class="project-image">
                     <div class="project-info">
                         <h3>Project Two Title</h3>
-                        <p>A brief and compelling description of the project...</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank">Live Demo</a>
-                        <a href="#" target="_blank">View Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="images/project-placeholder-3.jpg" alt="A screenshot or mockup of Project Three"
-                        class="project-image">
-                    <div class="project-info">
-                        <h3>Project Three Title</h3>
                         <p>A brief and compelling description of the project...</p>
                     </div>
                     <div class="project-links">
@@ -116,16 +102,23 @@
     </section>
     <section id="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>I'm always open to discussing new projects or opportunities. Feel free to reach out!</p>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="user_name" placeholder="Your Name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="user_email" placeholder="Your Email" required>
-                <label for="message">Message</label>
-                <textarea id="message" name="user_message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+            <h2>Get In Touch</h2>
+            <p> Have a question or want to work together? Feel free to reach out.</p>
+            <form id="contact-form" action="https://formspree.io/f/xyzdzlle" method="POST">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div id="form-status"></div>
+                <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
     </section>
@@ -133,8 +126,10 @@
         <div class="container">
             <p>&copy; 2025 Ravi Singh. All Rights Reserved.</p>
             <ul>
-                <li><a href="#" target="_blank">GitHub</a></li>
-                <li><a href="#" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/RaviO3" target="_blank" rel="noopener noreferrer"
+                        aria-label="View my profile on GitHub"> <i class="fab fa-github"></i></a></li>
+                <li><a href="" target="_blank" rel="noopener noreferrer" aria-label="Connect with me on LinkedIn"> <i
+                            class="fab fa-linkedin"></i></a></li>
             </ul>
         </div>
     </footer>
