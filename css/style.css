@@ -92,11 +92,6 @@ header nav ul li a {
     padding: 0.5rem;
     transition: color 0.3s ease-in-out;
 }
-section h1,
-section h2,
-section h3{
-    font: size 2em;
-}
 
 .menu-toggle {
     display: none;
@@ -135,7 +130,7 @@ header nav ul li a:hover {
     text-align: center;
 }
 
-#hero h1 {
+h1 {
     font-size: 3.5rem;
     font-weight: var(--font-weight-bold);
     margin-bottom: var(--spacing-unit);
