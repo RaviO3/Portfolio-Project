@@ -131,10 +131,12 @@ header nav ul li a:hover {
 }
 
 #hero h1 {
-    margin-block: 0.67em;
-    font-size: 2em;
     font-weight: var(--font-weight-bold);
     margin-bottom: var(--spacing-unit);
+}
+:where(h1){
+    margin-block: 0.67em;
+    font-size: 2em;
 }
 
 #hero .hero-subtitle {
