@@ -3,7 +3,7 @@ const projects = [
     title: "Portfolio Project (This Website)",
     description: "A responsive personal portfolio built from scratch using HTML, CSS, and vanilla JavaScript. Features a dynamic theme switcher and is populated by a JavaScript data structure.",
     imageUrl: "./images/portfolio-project-preview.webp",
-    liveUrl: "http://127.0.0.1:5500/index.html",
+    liveUrl: "https://zingy-croissant-8fd2be.netlify.app/",
     codeUrl: "https://github.com/RaviO3/Portfolio-Project"
   },
   {
